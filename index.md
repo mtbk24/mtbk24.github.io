@@ -4,3 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+<p>
+<img src="/images/Sirius.jpg" style="width: 500px;"/>
+ <em> </em>
+</p>
