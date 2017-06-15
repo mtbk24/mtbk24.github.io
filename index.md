@@ -5,6 +5,6 @@
 layout: home
 ---
 <p>
-<img src="/images/sirius.jpg" style="width: 500px;"/>
+<img src="/images/sirius.JPG" style="width: 500px;"/>
  <em> </em>
 </p>
