@@ -17,8 +17,8 @@ title: Kim Zoldak's Python blog
 email: kzoldak@email.uark.edu
 description: > # this means to ignore newlines until "baseurl:"
   Graduate student in Astrophysics.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://www.kimzoldak.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mtbk24.github.io." # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kazoldak
 github_username:  mtbk24
 
