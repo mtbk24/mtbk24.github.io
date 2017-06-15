@@ -2,7 +2,7 @@
 layout: post
 title:  "My First Post"
 date:   2017-06-15
-categories: testing
+categories: python
 ---
 For my first post, I just want to test out posting a snippet of code.
 
