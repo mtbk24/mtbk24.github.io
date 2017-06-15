@@ -37,7 +37,7 @@ plt.title('Polynomial')
 {% endhighlight %}
 
 <p>
-<img src="/images/poly.png" style="width: 200px;"/>
+<img src="/images/poly.png" style="width: 400px;"/>
  <em> </em>
 </p>
 
