@@ -7,6 +7,11 @@ categories: testing
 For my first post, I just want to test out posting a snippet of code.
 
 {% highlight ruby %}
+
+from __future__ import division
+import numpy
+import matplotlib.pyplot as plt
+
 def polynomial(x, *coeff):
     '''
     polynomial(x, *coeff)
@@ -25,7 +30,17 @@ x = numpy.linspace(0, 1, 100)
 coefficients = [1., 0.5, -0.5]    
 y = [polynomial(i, *coefficients) for i in x]
 plt.plot(x,y)
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Polynomial')
+
 {% endhighlight %}
+
+<p>
+<img src="/images/poly.png" style="width: 200px;"/>
+ <em> </em>
+</p>
+
 
 This is a polynomial function that will return the `y` values, given an `x` value and a list with the polynomial coefficients `*coeff`.
 
