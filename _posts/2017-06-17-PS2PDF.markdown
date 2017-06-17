@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Using ghostscript (in Python) to convert postscript to pdf."
+date:   2017-06-16
+categories: python
+---
+
+One of the most useful tools is learning how to use Python with basic commands you'd normally use at your terminal.  When I use [XSPEC](https://heasarc.gsfc.nasa.gov/xanadu/xspec/) for spectral modeling, it saves plots nicely in postscript.  However, in many cases they are not easily read by other programs.  You can convert them into a pdf file by using the `ghostscript` converter.  See the website [here](https://www.ghostscript.com/doc/current/Use.htm#Invoking).
+At the terminal (I have a Mac), the command is:
+
+{% highlight ruby %}
+ps2pdf filename.ps
+{% endhighlight %} 
+ 
+where `filename.ps` is the postscript file and the output will be `filename.pdf`.  No resolution has been lost and it appears flawless.
+
+{% highlight ruby %}
+import os, glob
+
+burst       = 'bn090328401'
+method      = 'PYXSPEC'
+det         = 'L'
+detdir      = ('GBMwLAT' if 'L' in det else 'GBM')
+direc       = '/Users/KimiZ/Python/Github/%s/images/%s/'%(burst, method)
+os.chdir(direc) 
+
+AllFiles = glob.glob('*.ps')
+
+for f in AllFiles:
+    os.system('ps2pdf %s'%f)
+    
+{% endhighlight %}    
+
+There are other utility scripts besides ps2pdf, including pdf2ps, ps2epsi, pdf2dsc, ps2ascii, ps2ps, and ps2ps2. 
+
+There are also other ways to convert postscript files to pdf.  When searching for a solution in Python, I came across a website that used the terminal command `convert`, but the resolution came out terrible for me.
+{% highlight ruby %}
+convert filename.ps filename.pdf
+{% endhighlight %} 
+I found this method online and [here they show you how to do it in Python].
+(http://www.soest.hawaii.edu/oceanography/researchers/francois/RESEARCH/RESEARCH_NOTES/COMPUTER_NOTES/PYTHON/examples-of-script/convert_script.html)
+
+
+
