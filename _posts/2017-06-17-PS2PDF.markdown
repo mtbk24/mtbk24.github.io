@@ -37,8 +37,7 @@ There are also other ways to convert postscript files to pdf.  When searching fo
 {% highlight ruby %}
 convert filename.ps filename.pdf
 {% endhighlight %} 
-I found this method online and [here they show you how to do it in Python]
-(http://www.soest.hawaii.edu/oceanography/researchers/francois/RESEARCH/RESEARCH_NOTES/COMPUTER_NOTES/PYTHON/examples-of-script/convert_script.html).
+I found this method online and [here they show you how to do it in Python](http://www.soest.hawaii.edu/oceanography/researchers/francois/RESEARCH/RESEARCH_NOTES/COMPUTER_NOTES/PYTHON/examples-of-script/convert_script.html).
 
 
 
