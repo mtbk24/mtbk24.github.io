@@ -34,7 +34,7 @@ for f in AllFiles:
 There are other utility scripts besides ps2pdf, including pdf2ps, ps2epsi, pdf2dsc, ps2ascii, ps2ps, and ps2ps2. 
 
 
-Another way to convert a postscript to a pdf (or png) is with the terminal command `convert` [provided by ImageMagick](https://www.imagemagick.org/script/index.php).  There is a number of cool things you can do to the image with this package.  You can download it through Homebrew (mac) or whatever package downloader you typically use.  See their site under `convert`.
+Another way to convert a postscript to a pdf (or png) is with the terminal command `convert` [provided by ImageMagick](https://www.imagemagick.org/script/index.php).  There is a number of cool things you can do to the image with this package.  You can download it through Homebrew (mac) or whatever package downloader you typically use. They also have instructions on their site. While you're there, look under `convert` to learn more about this tool.
 
 {% highlight ruby %}
 convert -density 250 -geometry 100%  filename.ps filename.pdf 
