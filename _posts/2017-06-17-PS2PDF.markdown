@@ -33,11 +33,16 @@ for f in AllFiles:
 
 There are other utility scripts besides ps2pdf, including pdf2ps, ps2epsi, pdf2dsc, ps2ascii, ps2ps, and ps2ps2. 
 
-There are also other ways to convert postscript files to pdf.  When searching for a solution in Python, I came across a website that used the terminal command `convert`, but the resolution came out terrible for me.
+
+Another way to convert a postscript to a pdf (or png) is with the terminal command `convert` [provided by ImageMagick](https://www.imagemagick.org/script/index.php).  There is a number of cool things you can do to the image with this package.  You can download it through Homebrew (mac) or whatever package downloader you typically use.  See their site under `convert`.
+
 {% highlight ruby %}
-convert filename.ps filename.pdf
-{% endhighlight %} 
-I found this method online and [here they show you how to do it in Python](http://www.soest.hawaii.edu/oceanography/researchers/francois/RESEARCH/RESEARCH_NOTES/COMPUTER_NOTES/PYTHON/examples-of-script/convert_script.html).
+convert -density 250 -geometry 100%  filename.ps filename.pdf 
+
+convert -density 250 -geometry 100%  filename.ps filename.png
+{% endhighlight %}  
+
+The 250 is the resolution and geometry controls the image size.
 
 
 
