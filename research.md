@@ -11,3 +11,5 @@ Research results are posted here.
 " style="width: 200px;"/>
  <em> </em>
 </p>
+
+[GRB Theories](https://github.com/mtbk24/mtbk24.github.io/blob/master/notes/Chapter_Theories_of_GRBs.pdf)
