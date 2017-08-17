@@ -40,9 +40,12 @@ Another way to convert a postscript to a pdf (or png) is with the terminal comma
 convert -density 250 -geometry 100%  filename.ps filename.pdf 
 
 convert -density 250 -geometry 100%  filename.ps filename.png
+
+convert -density 250 -geometry 100% filename.pdf filename.png
 {% endhighlight %}  
 
 The 250 is the resolution and geometry controls the image size.
+The last two conversions to .png: will generate new images, the same number as pages there were in the ps or pdf files, and name them filename-1.png, filename-2.png, ..., filename-15.png. 
 
 
 
