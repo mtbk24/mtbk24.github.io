@@ -60,13 +60,13 @@ bursts = ['bn080916009', 'bn090323002', 'bn090328401',
 for burst in bursts:
     direc = '/Users/KimiZ/GRBs2/analysis/LAT/%s/PYXSPEC/GBM/grbm/'%burst
     os.chdir(direc)
-    os.system('convert -density 250 -geometry 100% Plots_grbm_-01-_G_.pdf Plots_grbm_-01-_G_.png')
+    os.system('convert -density 250 -geometry 100% Plots_grbm_G_.pdf Plots_grbm_G_.png')
     
     
 for burst in bursts:
     direc = '/Users/KimiZ/GRBs2/analysis/LAT/%s/PYXSPEC/GBMwLAT/grbm/'%burst
     os.chdir(direc)
-    os.system('convert -density 250 -geometry 100% Plots_grbm_-01-_L_.pdf Plots_grbm_-01-_L_.png')
+    os.system('convert -density 250 -geometry 100% Plots_grbm_L_.pdf Plots_grbm_L_.png')
     
 {% endhighlight %}   
 
