@@ -56,17 +56,18 @@ bursts = ['bn080916009', 'bn090323002', 'bn090328401',
           'bn090510016','bn090902462','bn090926181',
           'bn091003191','bn091208410','bn100728095',
           'bn110731465','bn130518580','bn131108862','bn131231198']
-
+          
+# FOR GBM BURST ANALYSIS
 for burst in bursts:
     direc = '/Users/KimiZ/GRBs2/analysis/LAT/%s/PYXSPEC/GBM/grbm/'%burst
     os.chdir(direc)
-    os.system('convert -density 250 -geometry 100% Plots_grbm_G_.pdf Plots_grbm_G_.png')
+    os.system('convert -density 250 -geometry 100% Plt_grbm_G.pdf Plt_grbm_G.png')
     
-    
+# FOR GBM AND LAT BURST ANALYSIS    
 for burst in bursts:
     direc = '/Users/KimiZ/GRBs2/analysis/LAT/%s/PYXSPEC/GBMwLAT/grbm/'%burst
     os.chdir(direc)
-    os.system('convert -density 250 -geometry 100% Plots_grbm_L_.pdf Plots_grbm_L_.png')
+    os.system('convert -density 250 -geometry 100% Plt_grbm_L.pdf Plt_grbm_L.png')
     
 {% endhighlight %}   
 
