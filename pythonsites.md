@@ -13,3 +13,4 @@ permalink: /pythonsites/
 [Drop and Drag Text Example code, for moving text labels](http://scipy-cookbook.readthedocs.io/items/Matplotlib_Drag_n_Drop_Text_Example.html)
 --> This performed in iPython, must save image as .pdf, .ps, .eps, .cps because .png, .jpeg, and .tiff suffer resolution loss that can't be avoided (to my knowledge). Setting the dpi doesn't help.
 
+[Class Inheritance Explained best by Jess Hamrick](http://www.jesshamrick.com/2011/05/18/an-introduction-to-classes-and-inheritance-in-python/)
