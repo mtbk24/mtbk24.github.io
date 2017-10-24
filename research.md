@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-Research results are posted here.
+### Research results are posted here.
 
 <p>
 <img src="mtbk24/bn080916009/images/sbpl_-01-_L__ParamDistribution.pdf
