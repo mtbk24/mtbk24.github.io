@@ -9,4 +9,3 @@ permalink: /my_python/
 
 [Slicing light curve data multiple ways](https://github.com/mtbk24/mtbk24.github.io/blob/master/notes/Slicing_Lightcurve_Data_Multiple_Ways_by_Times.ipynb)
 
-[GRB Theories](https://github.com/mtbk24/mtbk24.github.io/blob/master/notes/Chapter_Theories_of_GRBs.pdf)
