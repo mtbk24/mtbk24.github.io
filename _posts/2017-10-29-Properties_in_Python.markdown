@@ -5,7 +5,7 @@ date:   2017-10-29
 categories: python
 ---
 
-I provide a better example of using properties on my GitHub page. I include the use of the property decorator.  Here is an example of what you’ll see on [my GitHub page here](https://github.com/mtbk24/PythonBasics/blob/master/Properties%20in%20Python.ipynb)
+I provide a better example of using properties on [my GitHub page here](https://github.com/mtbk24/PythonBasics/blob/master/Properties%20in%20Python.ipynb). I include the use of the property decorator.  Here is an example of what you’ll see on my Github page:
 
 {% highlight ruby %}
 
