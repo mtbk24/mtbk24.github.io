@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Conditionals in Python"
+date:   2017-10-29
+categories: python
+---
+When you only have two conditions to choose from, I will show you an easier way to write it that is also faster to run!
+This code makes random data of choices 'A' or 'B'.
+Choice A will be associated with 'water' and choice 'B' will be associated with 'milk'.
+The code will read the choice and return the associated drink choice.
+
+
+The typical way:
+{% highlight ruby %}
+import numpy as np
+import time
+
+# MAKE A LIST OF RANDOM CHOICES, EITHER CHOICE A OR CHOICE B
+choices = ['A', 'B']
+data    = np.random.choice(choices, size=10000000)
+
+start = time.time()
+result = []
+for i in data:
+    if 'A' in i:
+        result.append('water')
+    else:
+        result.append('milk')
+stop = time.time()
+print(stop-start) # 5.26572608948
+{% endhighlight %} 
+This took 5.27 seconds. For a smaller data set of size=100, this took 0.000281810760498 seconds to run.
+
+{% highlight ruby %}
+import numpy as np
+import time
+
+# MAKE A LIST OF RANDOM CHOICES, EITHER CHOICE A OR CHOICE B
+choices = ['A', 'B']
+data    = np.random.choice(choices, size=10000000)
+
+start = time.time()
+result2 = [('water' if 'A' in i else 'milk') for i in data]
+stop = time.time()
+print(stop-start) # 3.59431600571
+{% endhighlight %} 
+This took about 3.59 seconds.  For a smaller data set of size=100, this took 0.000203847885132 seconds to run.
+
