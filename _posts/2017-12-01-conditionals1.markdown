@@ -4,13 +4,12 @@ title:  "Conditionals in Python"
 date:   2017-12-01
 categories: python
 ---
-When you only have two conditions to choose from, I will show you an easier way to write it that is also faster to run!
 This code makes random data of choices 'A' or 'B'.
 Choice A will be associated with 'water' and choice 'B' will be associated with 'milk'.
-The code will read the choice and return the associated drink choice.
+The code will read the choice at each iteration of the list and return the associated drink choice.
 
 
-The typical way:
+The typical way to write this:
 {% highlight ruby %}
 import numpy as np
 import time
@@ -31,6 +30,7 @@ print(stop-start) # 5.26572608948
 {% endhighlight %} 
 This took 5.27 seconds. For a smaller data set of size=100, this took 0.000281810760498 seconds to run.
 
+A shorter and better way to write the same function, that is also faster!
 {% highlight ruby %}
 import numpy as np
 import time
