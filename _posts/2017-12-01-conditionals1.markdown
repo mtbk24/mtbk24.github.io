@@ -5,8 +5,8 @@ date:   2017-12-01
 categories: python
 ---
 This code makes random data of choices 'A' or 'B'.
+It then takes the choices and assigns a drink choice to them.
 Choice A will be associated with 'water' and choice 'B' will be associated with 'milk'.
-The code will read the choice at each iteration of the list and return the associated drink choice.
 
 
 The typical way to write this:
@@ -14,7 +14,6 @@ The typical way to write this:
 import numpy as np
 import time
 
-# MAKE A LIST OF RANDOM CHOICES, EITHER CHOICE A OR CHOICE B
 choices = ['A', 'B']
 data    = np.random.choice(choices, size=10000000)
 
@@ -35,7 +34,6 @@ A shorter and better way to write the same function, that is also faster!
 import numpy as np
 import time
 
-# MAKE A LIST OF RANDOM CHOICES, EITHER CHOICE A OR CHOICE B
 choices = ['A', 'B']
 data    = np.random.choice(choices, size=10000000)
 
