@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Conditionals in Python"
-date:   2017-10-29
+date:   2017-12-01
 categories: python
 ---
 When you only have two conditions to choose from, I will show you an easier way to write it that is also faster to run!
