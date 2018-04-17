@@ -12,4 +12,8 @@ permalink: /research/
  <em> </em>
 </p>
 
+[bn13123119](https://github.com/mtbk24/bn131231198/blob/master/analysis.md)
+
+
+
 [GRB Theories](https://github.com/mtbk24/mtbk24.github.io/blob/master/notes/Chapter_Theories_of_GRBs.pdf)
